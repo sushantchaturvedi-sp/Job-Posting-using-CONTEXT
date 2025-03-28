@@ -28,7 +28,7 @@ function Home() {
                             <Link to={`/jobs/${job.id}`}>{job.title} at {job.company}</Link>
                             {user?.role === "admin" && (
                                 <>
-                                    <Link to={`/edit-job/${job.id}`}>Edit</Link>
+                                    <Link to={`/edit-job/${job.id}`}><button>Edit</button></Link>
                                     <button onClick={() => handleDelete(job.id)}>Delete</button>
                                 </>
                             )}
